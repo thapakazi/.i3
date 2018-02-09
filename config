@@ -238,7 +238,7 @@ bar {
 
 ### custom configs
 #screen lock with i3lock 
-bindsym $sup+shift+x exec ~/.lock.sh
+bindsym $sup+shift+x exec ~/.i3/scripts/screen_locker.sh
 
 #making the function key work
 # Pulse Audio controls
