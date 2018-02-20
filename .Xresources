@@ -1,0 +1,34 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+! ------------------------------------------------------------------------------
+! ROFI customs
+! ------------------------------------------------------------------------------
+rofi.modi:                 run,window,ssh
+!rofi.opacity:              75
+rofi.width:                30
+rofi.lines:                10
+rofi.columns:              3
+rofi.font:                 Terminus 9
+rofi.fg:                   #839496
+rofi.bg:                   #121212
+rofi.bgalt:                #121212
+rofi.hlfg:                 #5F87AF
+rofi.hlbg:                 #242424
+rofi.bc:                   #5B5B5B
+rofi.terminal:             gnome-terminal
+rofi.ssh-client:           ssh
+rofi.ssh-command:          {terminal} -e {ssh-client} {host}
+rofi.run-command:          {cmd}
+rofi.run-shell-command:    {terminal} -e {cmd}
+rofi.disable-history:      true
+rofi.levenshtein-sort:     false
+rofi.case-sensitive:       false
+rofi.auto-select:          false
+rofi.parse-hosts:          false
