@@ -112,8 +112,8 @@ bindsym $sup+minus scratchpad show
 
 # set workspace variables
 set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
+set $workspace2 ""
+set $workspace3 ""
 set $workspace4 ""
 set $workspace5 ""
 set $workspace6 ""
@@ -151,7 +151,7 @@ assign [class="Emacs"] $workspace1
 assign [class="Google-chrome"] $workspace2
 assign [class="crx_pofekaindcmmojfnfgbpklepkjfilcep"] $workspace1
 assign [class="Skype"] $workspace4
-assign [class="HipChat"] $workspace4
+assign [class="Slack"] $workspace4
 assign [class="Telegram"] $workspace4
 assign [class="Spotify"] $workspace10
 assign [class="Rocket.Chat+"] $workspace4
@@ -187,7 +187,7 @@ bindsym $sup+Shift+c reload
 bindsym $sup+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $sup+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $sup+Shift+e exec ~/.i3/i3_exit_menu.sh
+bindsym $sup+Shift+e exec ~/.config/i3/scripts/i3_exit_menu.sh
 
 # The side buttons move the window around
 bindsym button9 move left
@@ -224,7 +224,7 @@ bindsym $sup+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  status_command i3blocks -c ~/.i3/i3blocks.conf
+  status_command i3blocks -c ~/.config/i3/i3blocks.conf
   colors {
     separator #AAAAAA
     background #222133
@@ -238,7 +238,7 @@ bar {
 
 ### custom configs
 #screen lock with i3lock 
-bindsym $sup+shift+x exec ~/.i3/scripts/screen_locker.sh
+bindsym $sup+shift+x exec ~/.config/i3/scripts/screen_locker.sh
 
 #making the function key work
 # Pulse Audio controls
@@ -261,7 +261,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # wallpaper
 # picture obtained from http://overview.artbyrens.com/
-exec_always --no-startup-id feh --bg-center ~/Pictures/wallpapers/groundleaf.jpg #~/Downloads/Images/walls/gandi.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wall.jpg
 # exec ~/.screenlayout/layout.sh
 exec_always --no-startup-id xrandr --output VIRTUAL1 --off --output eDP1 --mode 1368x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP2 --off
 
