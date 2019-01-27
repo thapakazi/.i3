@@ -148,14 +148,15 @@ bindsym $sup+Shift+0 move container to workspace $workspace10
 
 #force load the window
 assign [class="Emacs"] $workspace1
-assign [class="Google-chrome"] $workspace2
 assign [class="crx_pofekaindcmmojfnfgbpklepkjfilcep"] $workspace1
+assign [class="Google-chrome"] $workspace2
+assign [class="Firefox"] $workspace2
+assign [class="Gnome-terminal"] $workspace3
+assign [class="Spotify"] $workspace10
+assign [class="Rocket.Chat+"] $workspace4
 assign [class="Skype"] $workspace4
 assign [class="Slack"] $workspace4
 assign [class="Telegram"] $workspace4
-assign [class="Spotify"] $workspace10
-assign [class="Rocket.Chat+"] $workspace4
-
 #no borders
 # border / titlebar
 #new_window normal
@@ -263,7 +264,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # picture obtained from http://overview.artbyrens.com/
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wall.jpg
 # exec ~/.screenlayout/layout.sh
-exec_always --no-startup-id xrandr --output VIRTUAL1 --off --output eDP1 --mode 1368x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP2 --off
+exec_always --no-startup-id "xrandr && xrandr --output VIRTUAL1 --off --output eDP1 --mode 1368x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI2 --off --output HDMI1 --off --output DP2 --off"
 
 exec emacs
 exec firefox
