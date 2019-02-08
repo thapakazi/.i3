@@ -36,7 +36,10 @@ set $right l
 floating_modifier $alt
 
 # start a terminal
-bindsym $sup+Return exec gnome-terminal --geometry 104x24       
+bindsym $sup+Return exec alacritty
+
+#sticky window
+bindsym $sup+y sticky toggle
 
 # kill focused window
 bindsym $sup+Shift+q kill
@@ -151,7 +154,7 @@ assign [class="Emacs"] $workspace1
 assign [class="crx_pofekaindcmmojfnfgbpklepkjfilcep"] $workspace1
 assign [class="Google-chrome"] $workspace2
 assign [class="Firefox"] $workspace2
-assign [class="Gnome-terminal"] $workspace3
+assign [class="Alacritty"] $workspace3
 assign [class="Spotify"] $workspace10
 assign [class="Rocket.Chat+"] $workspace4
 assign [class="Skype"] $workspace4
@@ -268,7 +271,7 @@ exec_always --no-startup-id "xrandr && xrandr --output VIRTUAL1 --off --output e
 
 exec emacs
 exec firefox
-exec gnome-terminal --geometry 104x28
+exec alacritty
 exec clipit
 exec nm-applet
 exec artha
